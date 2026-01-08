@@ -1,0 +1,48 @@
+// command line : any interface that is used by entering textual commands (ex: window)
+// terminal : this is the type of the command line (ex: mac)
+// console : a command line interface used to work with your computer
+// shell : a program running on a terminal
+// baze : a popular shell on mac os/linux
+// z-shall : another shell (defualt)
+
+
+// command line :
+// "~" means all folder show you like you are currently desktop and open the terminal you see "~" sign means all folder are show you
+// 1) ls : list folder -- show my files delta-3.0-->
+                                              //  |-->folder 1 -->file 1
+                                              //  |-->folder 2 -->file 2
+                                                  
+// 2)pwd : print working directory (where am it?)
+// 3)clear : clear terminal
+
+// navigation 
+// inside & outside directories 
+// cd = change directory 
+"cd" file name 
+cd .. -->this means one step back in folder and cd ../..this means one 2 step back  -->
+
+
+relative path :  cd Downloads/
+absoulte path : /c/Users/yugth/Downloads 
+how to create a directory --> mkdir
+
+
+flag :
+flags are characters that we pass with commands to modify thier behaviour 
+manual command
+man ls : give the information about command 
+with flag
+ls -l
+ls -a
+ls -la
+
+
+touch command : touch index.html ,touch style.css 
+change file access and modification time , if file does not access ,it is created defualt permission 
+
+
+deleted files and folder
+git blash is the powerfull terminal if i deleted file or folder can not access again and can not store the recycle bin 
+rm --> removes files
+rmdir --> removes empty folders
+rm -rm --> removes any folders

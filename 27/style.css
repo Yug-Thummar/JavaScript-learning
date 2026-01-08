@@ -1,0 +1,259 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #007bff;
+}
+
+#main-title {
+    margin-bottom: 5px;
+    font-size: 2.5em;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section Styles */
+.content-section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.content-section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.redhtwo{
+    color: red;
+    background-color: aqua;
+}
+
+
+/* List Styles */
+#feature-list {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+.list-item {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.list-item.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #e9ecef;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 28%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #28a745;
+    margin-top: 0;
+}
+
+.card-description {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#yoyo-hony-singh {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+.hello{
+    color: purple;
+    text-decoration: underline black wavy;
+}
+
+.action-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+#add-new-item-button {
+    display: block;
+    margin: 30px auto 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease;
+}
+
+#add-new-item-button:hover {
+    background-color: #218838;
+}
+
+/* Form Styles */
+#my-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+#my-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#my-form input[type="text"],
+#my-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: calc(100% - 22px); /* Account for padding and border */
+}
+
+#my-form textarea {
+    resize: vertical;
+}
+
+#my-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#my-form button[type="submit"] {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease;
+}
+
+#my-form button[type="submit"]:hover {
+    background-color: #5a6268;
+}
+
+#form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+    display: none; /* Will be shown with DOM manipulation */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+    border-top: 5px solid #007bff;
+}
+
+.footer-link {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Helper Class for DOM manipulation */
+.active-card {
+    border: 2px solid #ffc107;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+}

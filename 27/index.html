@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="main-title" class="primary-heading abc-xyz">Welcome to the DOM Explorer!</h1>
+        <p class="tagline">Manipulate elements, see the magic.</p>
+    </header>
+
+    <main>
+        <section id="introduction-section" class="content-section">
+            <h2>About This Page</h2>
+            <p>This page is designed to help you practice your DOM manipulation skills. Below you'll find various
+                elements to interact with.</p>
+            <ul id="feature-list">
+                <li class="list-item data-attribute" data-type="text">Change text content</li>
+                <li class="list-item data-attribute" data-type="button">Add/remove classes</li>
+                <li class="list-item data-attribute" data-type="image">Modify attributes</li>
+                <li class="list-item data-attribute" data-type="container">Create new elements</li>
+            </ul>
+        </section>
+
+        <section id="interactive-elements-section" class="content-section">
+            <h2>Interactive Elements</h2>
+            <div class="card-container">
+                <div class="card" id="card-one">
+                    <h3>Card One</h3>
+                    <img src="./photo.jpg" alt="PlaceholderImage" id="yoyo-hony-singh"
+                        data-image-id="1234">
+                    <p class="card-description">This is the first card. Click the button to change its background.</p>
+                    <button class="action-button">Change Card Background</button>
+                </div>
+                <div class="card" id="card-two">
+                    <h3>Card Two</h3>
+                    <img src="./photo.jpg" alt="Placeholder Image" id="yoyo-hony-singh"
+                        data-image-id="123">
+                    <p class="card-description">This card has an image. Try changing its source or size.</p>
+                </div>
+                <div class="card" id="card-three">
+                    <h3 style="display: none;">Card Three</h3>
+                    <p class="card-description">This card contains a hidden message. Reveal it!</p>
+                    <span class="hidden-text" style="display: none;">Surprise! You found me!</span>
+                </div>
+            </div>
+            <button id="add-new-item-button">Add New List Item</button>
+        </section>
+
+        <section id="form-section" class="content-section">
+            <h2>User Input</h2>
+            <form id="my-form">
+                <label for="username-input">Username:</label>
+                <input type="text" id="username-input" name="username" placeholder="Enter your username">
+
+                <label for="feedback-textarea">Feedback:</label>
+                <textarea id="feedback-textarea" name="feedback" rows="4" placeholder="Share your thoughts"></textarea>
+
+                <input type="checkbox" id="subscribe-checkbox" name="subscribe">
+                <label for="subscribe-checkbox">Subscribe to newsletter</label>
+
+                <button type="submit">Submit Form</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DOM Learning. All rights reserved.</p>
+        <a href="#" class="footer-link">Privacy Policy</a> |
+        <a href="#" class="footer-link">Terms of Service</a>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
